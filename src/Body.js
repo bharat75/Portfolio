@@ -25,11 +25,7 @@ import {
 const Body = () => {
   useEffect(() => {
     const options = {
-      strings: [
-        "React JS Developer",
-        "Node.js Developer",
-        "Frontend Developer",
-      ],
+      strings: ["React JS Developer", "Frontend Developer"],
       typeSpeed: 100, // Typing speed in milliseconds
       backSpeed: 50, // Deleting speed in milliseconds
       backDelay: 1500, // Pause before starting to delete
