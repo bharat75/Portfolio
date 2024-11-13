@@ -9,6 +9,7 @@ import js from "../images/javascript.png";
 import jq from "../images/jquery.png";
 import ri from "../images/react.png";
 import raincheck from "../images/raincheck.png";
+import foodvilla from "../images/foodvilla.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -151,6 +152,17 @@ const Body = () => {
             >
               <img src={raincheck}></img>
               <h3>RainCheck Weather App</h3>
+              <p>HTML, CSS, JS, ReactJS</p>
+            </a>
+          </div>
+          <div className="card1">
+            <a
+              href="https://food-villa-sigma.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={foodvilla}></img>
+              <h3>FoodVilla - A food ordering app</h3>
               <p>HTML, CSS, JS, ReactJS</p>
             </a>
           </div>
