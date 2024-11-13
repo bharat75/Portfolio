@@ -546,41 +546,47 @@ body {
 
 /*CSS For mobile responsive start here*/
 
-/* Mobile styling */
+/* Full-Screen Overlay for Mobile Menu */
 @media (max-width: 768px) {
   .Header {
-    padding: 10px;
-  }
-
-  .Header > ul {
-    display: none; /* Hide menu by default */
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: #333;
-    width: 100%;
-    padding: 0;
-  }
-
-  .Header > ul.menu-open {
-    display: flex; /* Display menu when menuOpen is true */
-  }
-
-  .Header > ul > li {
-    margin: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
   }
 
   .menu-icon {
-    display: inline-block;
+    display: block;
     font-size: 1.5em;
     color: #fff;
-    margin-right: 20px;
+    position: relative;
+    top: 8px; /* Adjusted slightly down */
+    left: 0; /* Closer to the left */
     cursor: pointer;
   }
 
-  .Header > a {
-    margin-left: 10px;
+  .Header > ul {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black overlay */
+    z-index: 999;
+  }
+
+  .Header > ul.menu-open {
+    display: flex;
+  }
+
+  .Header > ul > li {
+    margin: 20px 0;
+    font-size: 24px;
+  }
+
+  .Header > ul > li > a {
+    color: #fff;
+    text-decoration: none;
   }
 }
