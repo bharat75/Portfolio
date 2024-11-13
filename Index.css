@@ -16,7 +16,6 @@ body {
 }
 
 .Header {
-  /* border: 1px solid red; */
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -543,4 +542,45 @@ body {
 .footer > p > a {
   text-decoration: none;
   color: purple;
+}
+
+/*CSS For mobile responsive start here*/
+
+/* Mobile styling */
+@media (max-width: 768px) {
+  .Header {
+    padding: 10px;
+  }
+
+  .Header > ul {
+    display: none; /* Hide menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 0;
+  }
+
+  .Header > ul.menu-open {
+    display: flex; /* Display menu when menuOpen is true */
+  }
+
+  .Header > ul > li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: inline-block;
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .Header > a {
+    margin-left: 10px;
+  }
 }
