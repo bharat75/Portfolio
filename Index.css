@@ -549,17 +549,18 @@ body {
 /* Full-Screen Overlay for Mobile Menu */
 @media (max-width: 768px) {
   .Header {
-    padding: 10px 20px;
+    padding: 10px;
   }
 
   .menu-icon {
     display: block;
-    font-size: 1.5em;
+    font-size: 23px;
     color: #fff;
     position: relative;
-    top: 8px; /* Adjusted slightly down */
-    left: 0; /* Closer to the left */
+    top: 8px;
+    left: 0px;
     cursor: pointer;
+    margin-right: 40px;
   }
 
   .Header > ul {
