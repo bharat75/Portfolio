@@ -549,18 +549,26 @@ body {
 /* Full-Screen Overlay for Mobile Menu */
 @media (max-width: 768px) {
   .Header {
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .Header > a {
+    padding: 0;
+    margin: 10px 0 0 20px;
   }
 
   .menu-icon {
     display: block;
-    font-size: 23px;
+    font-size: 1.5em;
     color: #fff;
     position: relative;
     top: 8px;
-    left: 0px;
+    left: 0;
+    margin-right: 15px;
     cursor: pointer;
-    margin-right: 40px;
   }
 
   .Header > ul {
@@ -573,12 +581,13 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 999;
   }
 
   .Header > ul.menu-open {
     display: flex;
+    width: 100%;
   }
 
   .Header > ul > li {
