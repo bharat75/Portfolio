@@ -78,6 +78,7 @@ body {
 .introduction {
   /* border: 10px solid black; */
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 250px 90px 0px 90px;
@@ -547,9 +548,8 @@ body {
 /*CSS For mobile responsive start here*/
 
 /* Full-Screen Overlay for Mobile Menu */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .Header {
-    border: 1px solid yellow;
     margin: 0;
     padding: 0;
     display: flex;
