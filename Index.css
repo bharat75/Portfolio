@@ -687,15 +687,14 @@ body {
     width: 100%; /* Occupy full width in smaller screens */
     margin: 10px 0;
     text-align: justify; /* Justify text */
-    line-height: 1.6;
-    letter-spacing: 1px;
+    font-size: 14px;
     font-family: "Poppins", sans-serif;
     font-size: 16px; /* Adjust font size */
     color: #fff;
   }
 
   .skillset > p > h3 {
-    font-size: 20px; /* Reduce heading size for mobile */
+    font-size: 12px; /* Reduce heading size for mobile */
     margin-bottom: 10px;
     text-align: center; /* Center-align heading */
   }
