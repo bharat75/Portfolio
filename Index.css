@@ -615,4 +615,38 @@ body {
   .text3 {
     font-size: 35px;
   }
+
+  .info {
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap in smaller screens */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add some padding around the container */
+  }
+
+  .info > img {
+    width: 100%; /* Full width in mobile view */
+    max-width: 300px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+    margin: 20px 0; /* Remove left margin */
+  }
+
+  .info > p {
+    margin: 20px 0; /* Simplify margins */
+    text-align: justify; /* Center-align text in mobile */
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 100%; /* Make paragraph occupy full width */
+  }
+
+  .info > p > h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+  }
 }
