@@ -607,4 +607,12 @@ body {
   .introduction {
     width: 100%;
   }
+
+  .text2 {
+    font-size: 65px;
+  }
+
+  .text3 {
+    font-size: 35px;
+  }
 }
